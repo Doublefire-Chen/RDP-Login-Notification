@@ -15,7 +15,7 @@ $env:NALI_LANG="en"
 
 
 $nali = & C:\Users\Developer\Desktop\nali.exe $ip
-#$from_region = [System.Text.Encoding]::UTF8.GetString([System.Text.Encoding]::Default.GetBytes($nali))
+$from_region = [System.Text.Encoding]::UTF8.GetString([System.Text.Encoding]::Default.GetBytes($nali))
 
 $from_region = [System.Text.Encoding]::UTF8.GetString([System.Text.Encoding]::UTF8.GetBytes($nali))
 #Write-Output $from_region
